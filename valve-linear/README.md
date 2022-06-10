@@ -7,3 +7,9 @@
 考察直线位移与转角的关系也可以证实线性度的偏差。本实验考察了在一定角度范围（体现为电位计反馈）内，阀杆直线位移的变化（体现为光栅尺反馈）.
 
 软件输入为角度范围[theta1, theta2]，输出为两种反馈机制下的行程对比
+
+Usage：
+(under macOS)
+brew install python3;
+pip3 install sympy matplotlib jupyterlab;
+/Users/panghuachong/Library/Python/3.8/bin/jupyter-lab &;
