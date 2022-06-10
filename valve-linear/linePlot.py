@@ -45,4 +45,5 @@ def derive(r, mid, min, max):
     peak = y.evalf(subs={'x' : di})
     rad = float(di)
     degree = np.rad2deg(rad)
-    print('在%f度附近取得极大差异,光栅尺行程高于电位计行程%.2f%%' % (degree, peak))
+    current = 16 * (rad - max) / (min - max) + 4
+    print('在%fmA附近取得极大差异,光栅尺行程高于电位计行程%.2f%%' % (current, peak))
